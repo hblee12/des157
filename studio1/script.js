@@ -24,12 +24,7 @@ function draw(){
     
     loadImage("banner_icons_3.png", function(img) {
     image(img, 480, 1, img.width/2, img.height/2);
-  });
-    
-  background(0);
-  for (var x = 0; x <= width; x+=dim) {
-    drawGradient(x, height/2);
-  }     
+  });   
 }
 
 function drawGradient() {
