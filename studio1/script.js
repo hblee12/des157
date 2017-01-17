@@ -20,6 +20,6 @@ function draw(){
   });
     
     loadImage("banner_icons_3.png", function(img) {
-    image(img, 500, 1, img.width/2, img.height/2);
+    image(img, 600, 1, img.width/2, img.height/2);
   });
 }
