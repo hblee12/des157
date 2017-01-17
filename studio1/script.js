@@ -30,5 +30,6 @@ function draw(){
 }
 
 function changeBack(){
-    background(0);
+    if cnv.mouseOver background(0);
+    else background(255);
 }
