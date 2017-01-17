@@ -32,6 +32,14 @@ function draw(){
 
 function changeImage() {
   loadImage("banner_blank.png", function(img) {
-    image(img, 80, 1, img.width/2, img.height/2);
+    image(img, 50, 1, img.width/2, img.height/2);
+  });
+  
+  loadImage("banner_blank.png", function(img) {
+    image(img, 250, 1, img.width/2, img.height/2);
+  });
+    
+  loadImage("banner_blank.png", function(img) {
+    image(img, 480, 1, img.width/2, img.height/2);
   });
 }
