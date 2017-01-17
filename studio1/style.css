@@ -8,6 +8,9 @@ body{
     clear: both;
     display: table;
 }
+.mySketch{
+    margin-right: -10px;
+}
 h1{
     font-family: helvetica;
     font-size: 65px;
