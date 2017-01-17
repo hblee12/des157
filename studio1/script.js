@@ -14,7 +14,7 @@ function setup() {
 
 function draw(){
     
-    ellipse(mouseX, 0, mouseY, 100);
+    ellipse(mouseX, mouseY);
     fill (0);  
     
     loadImage("banner_icons_1.png", function(img) {
