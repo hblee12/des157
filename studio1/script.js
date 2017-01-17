@@ -4,9 +4,11 @@
 // like print() messages in Processing
 console.log("this is a js comment");
 
+var cnv;
 function setup() {
   // here we use a callback to display the image after loading
-  createCanvas(800, 250);
+  cnv = createCanvas(800, 250);
+  cnv.mouseOver(changeBack);
   background(255);   
 }
 
@@ -28,3 +30,6 @@ function draw(){
   });   
 }
 
+function changeBack(){
+    background (random);
+}
