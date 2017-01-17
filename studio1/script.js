@@ -18,15 +18,15 @@ function setup() {
 
 function draw(){
     loadImage("banner_icons_1.png", function(img) {
-    image(img, 80, 1, img.width/2, img.height/2);
+    image(img, 50, 1, img.width/2, img.height/2);
   });
     
     loadImage("banner_icons_2.png", function(img) {
-    image(img, 250, 1, img.width/2, img.height/2);
+    image(img, 220, 1, img.width/2, img.height/2);
   });
     
     loadImage("banner_icons_3.png", function(img) {
-    image(img, 480, 1, img.width/2, img.height/2);
+    image(img, 450, 1, img.width/2, img.height/2);
   });
 }
 
