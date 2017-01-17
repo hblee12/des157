@@ -36,9 +36,10 @@ li{
     text-align: left;
 }
 footer{
-	  height: 50px;
-	  width: 100%;
-     text-align: center;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
 }
 a:link{
     font-family: helvetica;
