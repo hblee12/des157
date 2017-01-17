@@ -9,8 +9,7 @@ var cnv;
 function setup() {
   // here we use a callback to display the image after loading
   cnv = createCanvas(800, 250);
-  background(255);
-  cnv.mouseOver(drawGradient);    
+  background(255);   
 }
 
 function draw(){
@@ -25,10 +24,8 @@ function draw(){
     loadImage("banner_icons_3.png", function(img) {
     image(img, 480, 1, img.width/2, img.height/2);
   });   
+    
+  ellipse(mouseX, 0, mouseY, 100);
+  fill (0);  
 }
 
-function drawGradient() {
-  ellipse(mouseX, 0, mouseY, 100);
-  fill (0);
-  }
-}
