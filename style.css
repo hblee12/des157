@@ -42,7 +42,6 @@ body{
     background-color: #FCC7A9;
     width:715px;
     margin:auto;
-    font-family: helvetica;
 }
 .clear {
     content: "";
@@ -72,9 +71,11 @@ div{
     left: 5%;
 }
 li{
+    font-family: montserrat;
     font-size: 15px;
     color: #20b2b2;
     text-align: left;
+    margin-top: 50px;
 }
 footer{
     height: 50px;
