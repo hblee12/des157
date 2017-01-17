@@ -16,10 +16,10 @@ function draw(){
   });
     
     loadImage("banner_icons_2.png", function(img) {
-    image(img, 200, 1, img.width/2, img.height/2);
+    image(img, 300, 1, img.width/2, img.height/2);
   });
     
     loadImage("banner_icons_3.png", function(img) {
-    image(img, 300, 1, img.width/2, img.height/2);
+    image(img, 800, 1, img.width/2, img.height/2);
   });
 }
