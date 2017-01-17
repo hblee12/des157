@@ -38,6 +38,7 @@ li{
 footer{
 	  height: 50px;
 	  width: 100%;
+     text-align: center;
 }
 a:link{
     font-family: helvetica;
