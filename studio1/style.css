@@ -5,6 +5,7 @@ body{
 }
 .mySketch{
     position: absolute;
+    bottom: 1000px;
 }
 h1{
     font-family: helvetica;
