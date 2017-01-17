@@ -7,7 +7,8 @@ console.log("this is a js comment");
 var cnv;
 function setup() {
   // here we use a callback to display the image after loading
-  cnv = createCanvas(800, 250);
+  cnv = createCanvas(800, 250
+  cnv.parent('mySketch');
   cnv.mouseOver(changeBack);
   cnv.mouseOut(changeBlank);
 }
