@@ -3,6 +3,9 @@ body{
     width:715px;
     margin:auto;
 }
+.mySketch{
+    position: absolute;
+}
 h1{
     font-family: helvetica;
     font-size: 65px;
