@@ -3,6 +3,9 @@ body{
     width:715px;
     margin:auto;
 }
+header{
+    margin-right: -10px;
+}
 h1{
     font-family: helvetica;
     font-size: 65px;
@@ -25,7 +28,7 @@ div{
     left: 5%;
 }
 li{
-	  font-family: helvetica;
+    font-family: helvetica;
     font-size: 15px;
     color: #20b2b2;
     text-align: left;
