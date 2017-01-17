@@ -3,6 +3,11 @@ body{
     width:715px;
     margin:auto;
 }
+.clear {
+    content: "";
+    clear: both;
+    display: table;
+}
 h1{
     font-family: helvetica;
     font-size: 65px;
@@ -34,8 +39,7 @@ footer{
 	  height: 50px;
 	  width: 100%;
 	  float: left;
-	  position: absolute;
-	  bottom: 100px;
+      top: 100px;
 	  left: 40%;
 }
 a:link{

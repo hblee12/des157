@@ -3,6 +3,11 @@ body{
     width:500px;
     margin:auto;
 }
+.clear {
+    content: "";
+    clear: both;
+    display: table;
+}
 h1{
     font-family: helvetica;
     font-size: 65px;
@@ -22,6 +27,7 @@ div{
   	position: relative;
   	text-align: left;
     width: 500px;
+    margin-top: -50px;
 }
 p{
     font-family: helvetica;
@@ -29,10 +35,10 @@ p{
     color: #20b2b2;
 }
 footer{
+    text-align: center;
 	width: 100%;
-	position: absolute;
-    bottom: 500px;
-    left: 46%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 a:link{
     font-family: helvetica;
