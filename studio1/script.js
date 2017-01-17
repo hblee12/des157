@@ -4,18 +4,17 @@
 // like print() messages in Processing
 console.log("this is a js comment");
 
-
-var cnv;
 function setup() {
   // here we use a callback to display the image after loading
-  cnv = createCanvas(800, 250);
+  createCanvas(800, 250);
   background(255);   
 }
 
 function draw(){
     
-    ellipse(mouseX, mouseY);
+    ellipse(mouseX, mouseY, 50, 50);
     fill (0);  
+    }
     
     loadImage("banner_icons_1.png", function(img) {
     image(img, 50, 1, img.width/2, img.height/2);
