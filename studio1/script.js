@@ -13,6 +13,10 @@ function setup() {
 }
 
 function draw(){
+    
+    ellipse(mouseX, 0, mouseY, 100);
+    fill (0);  
+    
     loadImage("banner_icons_1.png", function(img) {
     image(img, 50, 1, img.width/2, img.height/2);
   });
@@ -24,8 +28,5 @@ function draw(){
     loadImage("banner_icons_3.png", function(img) {
     image(img, 480, 1, img.width/2, img.height/2);
   });   
-    
-  ellipse(mouseX, 0, mouseY, 100);
-  fill (0);  
 }
 
