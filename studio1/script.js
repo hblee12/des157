@@ -31,5 +31,5 @@ function draw(){
 }
 
 function changeBack(){
-    background (random);
+    background (0);
 }
