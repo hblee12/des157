@@ -52,6 +52,7 @@ body{
     margin-right: -10px;
 }
 h1{
+    font-family: montserrat;
     font-size: 65px;
     color: #20b2b2;
     text-align: center;
@@ -75,7 +76,6 @@ li{
     font-size: 15px;
     color: #20b2b2;
     text-align: left;
-    margin-top: 50px;
 }
 footer{
     height: 50px;
