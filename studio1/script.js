@@ -23,6 +23,6 @@ function setup() {
 
 function draw(){
     loadImage("banner_icons_1.png", function(img) {
-    image(img, 100, height/2, img.width/2, img.height/2);
+    image(img, 400, height/2, img.width/2, img.height/2);
   });
 }
