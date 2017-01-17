@@ -5,7 +5,7 @@
 console.log("this is a js comment");
 
 
-var bg;
+/*var bg;
 function setup() {
   bg = loadImage("banner_icons_1.png");
   createCanvas(800, 250);
@@ -13,11 +13,11 @@ function setup() {
     
 function draw() {
   background(bg);
-}
+}*/
     
-    
+function setup() {
   // here we use a callback to display the image after loading
-  /*createCanvas(800, 250);
+  createCanvas(800, 250);
   background(255);
   loadImage("banner_icons_1.png", function(img) {
     image(img, 0, 0);
@@ -26,4 +26,4 @@ function draw() {
 
 function draw(){
     image(img, 0,0);
-}*/
+}*
