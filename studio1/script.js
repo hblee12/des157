@@ -12,14 +12,14 @@ function setup() {
 
 function draw(){
     loadImage("banner_icons_1.png", function(img) {
-    image(img, 150, 1, img.width/2, img.height/2);
+    image(img, 50, 1, img.width/2, img.height/2);
   });
     
     loadImage("banner_icons_2.png", function(img) {
-    image(img, 350, 1, img.width/2, img.height/2);
+    image(img, 250, 1, img.width/2, img.height/2);
   });
     
     loadImage("banner_icons_3.png", function(img) {
-    image(img, 750, 1, img.width/2, img.height/2);
+    image(img, 550, 1, img.width/2, img.height/2);
   });
 }
