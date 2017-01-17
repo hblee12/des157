@@ -9,6 +9,7 @@ function setup() {
   // here we use a callback to display the image after loading
   cnv = createCanvas(800, 250);
   cnv.mouseOver(changeBack);
+  cnv.mouseOut(changeBlank);
 }
 
 function draw(){ 
@@ -30,4 +31,8 @@ function changeBack(){
     loadImage("banner_gradient.png", function(img) {
     image(img, 0,0)
   });
+}
+
+function changeBlank(){
+    background(0);
 }
