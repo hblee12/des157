@@ -31,8 +31,7 @@ function draw(){
 }
 
 function changeImage() {
-  d = d + 10;
-  if (d > 100) {
-    d = 0;
-  }
+  loadImage("banner_blank.png", function(img) {
+    image(img, 80, 1, img.width/2, img.height/2);
+  });
 }
