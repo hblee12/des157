@@ -9,7 +9,6 @@ function setup() {
   // here we use a callback to display the image after loading
   cnv = createCanvas(800, 250);
   cnv.mouseOver(changeBack);
-  background(255);   
 }
 
 function draw(){
@@ -31,5 +30,5 @@ function draw(){
 }
 
 function changeBack(){
-    background (0);
+    background(0);
 }
