@@ -38,9 +38,6 @@ li{
 footer{
 	  height: 50px;
 	  width: 100%;
-	  float: left;
-      top: 100px;
-	  left: 40%;
 }
 a:link{
     font-family: helvetica;
