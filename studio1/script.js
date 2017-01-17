@@ -42,7 +42,7 @@ function draw(){
   }     
 }
 
-function drawGradient(x, y) {
+function drawGradient() {
   var radius = dim/2;
   var h = random(0, 360);
   for (var r = radius; r > 0; --r) {
