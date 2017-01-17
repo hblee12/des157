@@ -19,11 +19,10 @@ function setup() {
   // here we use a callback to display the image after loading
   createCanvas(800, 250);
   background(255);
-  loadImage("banner_icons_1.png", function(img) {
-    image(img, 0, 0);
-  });
 }
 
 function draw(){
-    image(img, 0,0);
-}*
+    loadImage("banner_icons_1.png", function(img) {
+    image(img, 0, 0);
+  });
+}
