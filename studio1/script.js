@@ -13,7 +13,7 @@ function setup() {
   // here we use a callback to display the image after loading
   cnv = createCanvas(800, 250);
   background(255);
-  cnv.mouseOver(changeImage);
+  cnv.mouseOver(drawGradient);
   dim = width/2;
   background(0);
   colorMode(HSB, 360, 100, 100);
@@ -50,8 +50,4 @@ function drawGradient(x, y) {
     ellipse(x, y, r, r);
     h = (h + 1) % 360;
   }
-}
-
-function changeImage() {
-  image
 }
