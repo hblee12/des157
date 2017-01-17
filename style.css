@@ -39,6 +39,7 @@ table {
 }
 body{
     font-family: montserrat;
+    font-color: #20b2b2;
     background-color: #FCC7A9;
     width:715px;
     margin:auto;
@@ -73,7 +74,6 @@ div{
 }
 li{
     font-size: 15px;
-    color: #fff;
     text-align: left;
     padding-bottom: 5px;
     padding-left: 3px;
@@ -86,7 +86,6 @@ footer{
 }
 a:link{
     font-size: 15px;
-    color: #fff;
     text-decoration: none;
     padding-right: 25px;
     }
