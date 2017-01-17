@@ -30,6 +30,5 @@ function draw(){
 }
 
 function changeBack(){
-    if cnv.mouseOver background(0);
-    else background(255);
+    background(random 50);
 }
