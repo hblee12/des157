@@ -26,7 +26,7 @@ function draw(){
   });
     
     loadImage("banner_icons_3.png", function(img) {
-    image(img, 450, 1, img.width/2, img.height/2);
+    image(img, 480, 1, img.width/2, img.height/2);
   });
 }
 
