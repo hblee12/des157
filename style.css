@@ -39,7 +39,7 @@ table {
 }
 body{
     font-family: montserrat;
-    font-color: #20b2b2;
+    color: #333333;
     background-color: #FCC7A9;
     width:715px;
     margin:auto;
@@ -54,7 +54,6 @@ body{
 }
 h1{
     font-size: 65px;
-    color: #20b2b2;
     text-align: center;
     padding-bottom: 50px;
 }
@@ -86,6 +85,7 @@ footer{
 }
 a:link{
     font-size: 15px;
+    color: #333333;
     text-decoration: none;
     padding-right: 25px;
     }
