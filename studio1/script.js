@@ -7,7 +7,7 @@ console.log("this is a js comment");
 
 var bg;
 function setup() {
-  bg = loadImage("banner.png");
+  bg = loadImage("banner_icons_1.png");
   createCanvas(800, 250);
 }
     
