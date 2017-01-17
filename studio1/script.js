@@ -6,24 +6,14 @@ console.log("this is a js comment");
 
 
 var cnv;
-var dim;
-var d;
-var g;
 function setup() {
   // here we use a callback to display the image after loading
   cnv = createCanvas(800, 250);
   background(255);
-  cnv.mouseOver(drawGradient);
-  dim = width/2;
-  background(0);
-  colorMode(HSB, 360, 100, 100);
-  noStroke();
-  ellipseMode(RADIUS);
-  frameRate(1);    
+  cnv.mouseOver(drawGradient);    
 }
 
 function draw(){
-    
     loadImage("banner_icons_1.png", function(img) {
     image(img, 50, 1, img.width/2, img.height/2);
   });
@@ -42,12 +32,8 @@ function draw(){
   }     
 }
 
-function drawGradient(x,y) {
-  var radius = dim/2;
-  var h = random(0, 360);
-  for (var r = radius; r > 0; --r) {
-    fill(h, 90, 90);
-    ellipse(x, y, r, r);
-    h = (h + 1) % 360;
+function drawGradient() {
+  ellipse(mouseX, 0, mouseY, 100);
+  fill (0);
   }
 }
