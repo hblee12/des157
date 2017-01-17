@@ -11,10 +11,7 @@ function setup() {
   cnv.mouseOver(changeBack);
 }
 
-function draw(){
-    
-    ellipse(mouseX, mouseY);
-    fill (0);  
+function draw(){ 
     
     loadImage("banner_icons_1.png", function(img) {
     image(img, 50, 1, img.width/2, img.height/2);
@@ -30,5 +27,7 @@ function draw(){
 }
 
 function changeBack(){
-    background(random 50);
+    loadImage("banner_gradient.png", function(img) {
+    image(img, 0,0);
+  });
 }
