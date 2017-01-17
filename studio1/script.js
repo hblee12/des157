@@ -26,8 +26,8 @@ function draw(){
   });   
 }
 
-/*function changeBack(){
+function changeBack(){
     loadImage("banner_gradient.png", function(img) {
-    image(img, 0,0);
+    image(img, 0,0)
   });
 }
