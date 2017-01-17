@@ -6,6 +6,7 @@ console.log("this is a js comment");
 
 
 var cnv;
+var dim;
 var d;
 var g;
 function setup() {
@@ -13,10 +14,16 @@ function setup() {
   cnv = createCanvas(800, 250);
   background(255);
   cnv.mouseOver(changeImage);
-  d = 10;    
+  dim = width/2;
+  background(0);
+  colorMode(HSB, 360, 100, 100);
+  noStroke();
+  ellipseMode(RADIUS);
+  frameRate(1);    
 }
 
 function draw(){
+    
     loadImage("banner_icons_1.png", function(img) {
     image(img, 50, 1, img.width/2, img.height/2);
   });
@@ -28,8 +35,23 @@ function draw(){
     loadImage("banner_icons_3.png", function(img) {
     image(img, 480, 1, img.width/2, img.height/2);
   });
+    
+  background(0);
+  for (var x = 0; x <= width; x+=dim) {
+    drawGradient(x, height/2);
+  }     
+}
+
+function drawGradient(x, y) {
+  var radius = dim/2;
+  var h = random(0, 360);
+  for (var r = radius; r > 0; --r) {
+    fill(h, 90, 90);
+    ellipse(x, y, r, r);
+    h = (h + 1) % 360;
+  }
 }
 
 function changeImage() {
-  ellipse(mouseX, mouseY, 60, 60);
+  image
 }
