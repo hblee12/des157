@@ -4,17 +4,6 @@
 // like print() messages in Processing
 console.log("this is a js comment");
 
-
-/*var bg;
-function setup() {
-  bg = loadImage("banner_icons_1.png");
-  createCanvas(800, 250);
-}
-    
-function draw() {
-  background(bg);
-}*/
-    
 function setup() {
   // here we use a callback to display the image after loading
   createCanvas(800, 250);
@@ -24,5 +13,13 @@ function setup() {
 function draw(){
     loadImage("banner_icons_1.png", function(img) {
     image(img, 0, 1, img.width/2, img.height/2);
+  });
+    
+    loadImage("banner_icons_2.png", function(img) {
+    image(img, 1, 1, img.width/2, img.height/2);
+  });
+    
+    loadImage("banner_icons_3.png", function(img) {
+    image(img, 2, 1, img.width/2, img.height/2);
   });
 }
