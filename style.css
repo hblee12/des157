@@ -69,24 +69,25 @@ h2{
 }
 div{
     position: relative;
-    left: 9%;
+    left: 15%;
     float: left;
   	padding-right: 50px;
 }
 li{
-    font-size: 15px;
+    font-size: 13px;
     text-align: left;
     padding-bottom: 5px;
     padding-left: 3px;
 }
 footer{
+    text-transform: uppercase;
     height: 50px;
     width: 100%;
     text-align: center;
     margin-top: 50px;
 }
 a:link{
-    font-size: 15px;
+    font-size: 13px;
     color: #333333;
     text-decoration: none;
     padding-right: 25px;
