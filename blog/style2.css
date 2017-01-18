@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
-    font-family: montserrat;
+    font-family: montserratregular;
     background-color: #FCC7A9;
     width:500px;
     margin:auto;
@@ -17,7 +25,7 @@ h1{
 }
 h2{
 	color: white;
-    font: bold 18px/30px montserrat, Sans-Serif;
+    font: bold 18px/30px montserratregular, Sans-Serif;
     background: rgb(0,0,0);
     background: rgba(0,0,0,0.3);
     padding: 1px;

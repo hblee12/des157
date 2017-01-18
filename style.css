@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -38,7 +46,7 @@ table {
 	border-spacing: 0;
 }
 body{
-    font-family: montserrat;
+    font-family: montserratregular;
     color: #333333;
     background-color: #FCC7A9;
     width:715px;
@@ -56,12 +64,13 @@ body{
 }
 h1{
     font-size: 65px;
+    color: #20b2b2;
     text-align: center;
     padding-bottom: 50px;
 }
 h2{
     color: white;
-    font: bold 18px/30px montserrat, Sans-Serif;
+    font: bold 18px/30px montserratregular, Sans-Serif;
     background: rgb(0,0,0);
     background: rgba(0,0,0,0.3);
     padding-left: 3px;
