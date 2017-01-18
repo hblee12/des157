@@ -25,7 +25,14 @@ function draw(){
     
     loadImage("studio1/banner_icons_3.png", function(img) {
     image(img, 480, 1, img.width/2, img.height/2);
-  });   
+  });
+    
+    if (mouseX > 72) && (mouseX < 144) && (mouseY > 15) && (mouseY < 185){
+        loadImage("studio1/banner_icons_2.png", function(img) {
+    image(img, 50, 1, img.width/2, img.height/2);
+  });
+    }
+    
 }
 
 function changeBack(){
