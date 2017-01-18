@@ -15,11 +15,11 @@ function setup() {
 
 function draw(){ 
     
-     if (mouseX > 50) && (mouseX < 250){
+    /* if (mouseX > 50) && (mouseX < 250){
         loadImage("studio1/banner_icons_2.png", function(img) {
         image(img, 50, 1, img.width/2, img.height/2);
         });
-    }
+    }*/
     
     loadImage("studio1/banner_icons_1.png", function(img) {
     image(img, 50, 1, img.width/2, img.height/2);
