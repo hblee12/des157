@@ -31,7 +31,6 @@ function draw(){
     
         loadImage("studio1/banner_icons_2.png", function(img) {
         image(img, 50, 1, img.width/2, img.height/2);
-        });
     }
     
 }
