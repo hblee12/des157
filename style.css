@@ -49,7 +49,7 @@ body{
     clear: both;
     display: table;
 }
-.mySketch{
+#mySketch{
     margin-top: 10px;
 }
 h1{
