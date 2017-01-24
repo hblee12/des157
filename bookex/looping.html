@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>chapter 2: looping a triangle</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+        @font-face {
+        font-family: 'montserratregular';
+        src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        body {
+            font-family: montserratregular, sans-serif;
+            color: #333;
+            background-color: #FCC7A9;
+            font-size: 12px;
+            margin: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 65px;
+            color: #20b2b2;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 2: looping a triangle</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        // going to use a for loop to declare the variable, set the length, and add the expression to add the hashtags
+        for (var hash = "#"; hash.length < 8; hash += "#")
+        //declare the value of hash
+            console.log(hash);
+    </script>
+</body>
