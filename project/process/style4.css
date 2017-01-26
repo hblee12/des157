@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    font-family: montserratregular;
+    background-color: #FCC7A9;
+    width:500px;
+    margin:auto;
+}
+.clear {
+    content: "";
+    clear: both;
+    display: table;
+}
+h1{
+    font-size: 50px;
+    color: #20b2b2;
+    text-align: center;
+    padding-bottom: 50px;
+}
+div{
+	float: left;
+  	position: relative;
+  	text-align: left;
+    width: 500px;
+    margin-top: -50px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+img{
+    margin-left: 20px;
+    width: 42%;
+}
+#live{
+    margin-left: 15px;
+    width: 20%;
+    float: left;
+    padding: 1px;
+}
+p{
+    text-indent: 20px;
+    font-family: avenir;
+    margin: auto;
+    padding-bottom: 15px;
+    width: 490px;
+    font-size: 13px;
+    color: #333333;
+}
+footer{
+    text-align: center;
+	width: 100%;
+    margin-bottom: 25px;
+}
+a:link{
+    font-size: 13px;
+    color: #20b2b2;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 25px;
+    }
+a:visited{
+    color: gray;
+    }
+a:hover{
+    color: white;
+}
