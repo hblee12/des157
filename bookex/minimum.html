@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>chapter 3: minimum</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+        @font-face {
+        font-family: 'montserratregular';
+        src: url('montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        body {
+            font-family: montserratregular, sans-serif;
+            color: #333;
+            background-color: #FCC7A9;
+            font-size: 12px;
+            margin: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 65px;
+            color: #20b2b2;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        footer{
+            text-transform: uppercase;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        a:link{
+            font-size: 13px;
+            color: #333333;
+            text-decoration: none;
+            padding-right: 25px;
+        }
+        a:visited{
+            color: gray;
+        }
+        a:hover{
+            color: #20b2b2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 3: minimum</h1>
+    <h2>open the console to see the results of the script</h2>
+    <script>
+        //create a function that contains the statement to find the minimum of a number
+        function min (num1,num2){
+            if (num1 < num2)
+        //call the function
+                return num1;
+            else
+                return num2;
+        }
+        //print the function
+        console.log (min(0, -5));
+        console.log (min(5, 20));
+    </script>
+    
+    <footer>
+        <nav>
+            <a href="../index.html">portal</a>
+            <a href="mailto:hbllee@ucdavis.edu" target="_blank">email</a>
+            <a href="https://validator.w3.org/check?uri=referer">validate HTML 5</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">validate CSS</a>
+        </nav>
+    </footer>
+</body>
