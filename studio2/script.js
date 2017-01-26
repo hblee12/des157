@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           alert("fill your name in please");
         }
 
-        userInput.innerHTML = 'After a long day of work, Kanye West goes to his Kanye ' + userNoun + ' to take his Kanye ' + userVerb + '. He wakes up feeling his Kanye ' + userAdj + '. Then he’ll get Kanye ' + userVerb2 + ' on his Kanye ' + userNoun2 + ' to go on a Kanye ' + userNoun3 + '. He goes to church and becomes Kanye ' + userAdj2 + ' , then to a hotel room to be a Kanye ' + userNoun4 + '. Then to school to take his Kanye ' + userNoun5 + '. He forgot to brush his teeth. Did he run out of Kanye ' + userNoun6 + '? His neighbor stole it, what a Kanye ' + userNoun7 + '.';
+        userInput.innerHTML = 'After a long day of work, Kanye West goes to his Kanye ' + userNoun + ' to take his Kanye ' + userVerb + '. He wakes up feeling his Kanye ' + userAdj + '. Then he’ll get Kanye ' + userVerb2 + ' on his Kanye ' + userNoun2 + ' to go on a Kanye ' + userNoun3 + '. He goes to church and becomes Kanye ' + userAdj2 + ', then to a hotel room to be a Kanye ' + userNoun4 + '. Then to school to take his Kanye ' + userNoun5 + '. He forgot to brush his teeth. Did he run out of Kanye ' + userNoun6 + '? His neighbor stole it, what a Kanye ' + userNoun7 + '.';
 
         return false;
 
