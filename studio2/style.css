@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'montserratregular';
-    src: url('montserrat-regular-webfont.woff2') format('woff2'),
-         url('montserrat-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,9 +38,9 @@ table {
 	border-spacing: 0;
 }
 body{
-    font-family: montserratregular;
-    color: #333333;
-    background-color: #FCC7A9;
+    font-family: helvetica;
+    color: #f4aa10;
+    background-color: #000;
     width:715px;
     margin:auto;
 }
@@ -58,21 +50,37 @@ body{
     display: table;
 }
 h1{
-    font-size: 65px;
-    color: #20b2b2;
-    text-align: center;
-    padding-bottom: 50px;
+    font-family: seagram tfb;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #f4aa10;
+    margin-left: 20px;
+    padding-left: 50px;
 }
 h2{
     color: white;
-    font: bold 18px/30px montserratregular, Sans-Serif;
     padding-left: 3px;
     margin-bottom: 10px;    
 }
-div{
-    position: relative;
+#kanye{
     float: left;
-  	padding-right: 50px;
+    width: 40%;
+}
+#quote{
+    width: 120%;
+}
+input[type="reset"], input[type="submit"] {
+  position:relative;
+  left:1.77in;
+  top:14px;
+  padding:12px;
+  border:none; /*remove default*/
+  border-radius:3px;
+  border-bottom:4px orange solid;
+  background-color:antiquewhite;
+  color:#333;
+  font-weight:bold;
+  font-size:18px;
 }
 footer{
     text-transform: uppercase;
