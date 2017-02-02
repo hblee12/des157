@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>chapter 3: minimum</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+        
+        @font-face {
+            font-family: 'montserratregular';
+            src: url('montserrat-regular-webfont.woff2') format('woff2'), url('montserrat-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: montserratregular, sans-serif;
+            color: #333;
+            background-color: #FCC7A9;
+            font-size: 12px;
+            margin: 100px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 65px;
+            color: #20b2b2;
+            text-align: center;
+        }
+        
+        img{
+            margin-top: 200px;
+            margin-left: 600px;
+        }
+        footer {
+            text-transform: uppercase;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            margin-top: 100px;
+        }
+    
+        a:link {
+            font-size: 13px;
+            color: #333333;
+            text-decoration: none;
+            padding-right: 25px;
+        }
+        
+        a:visited {
+            color: gray;
+        }
+        
+        a:hover {
+            color: #20b2b2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 13: the cat's hat</h1>
+
+    <img src="cat.png" id="cat" style="position: absolute">
+    <img src="hat.png" id="hat" style="position: absolute">
+    
+            <script>
+                var cat = document.querySelector("#cat");
+                var hat = document.querySelector("#hat");
+                var angle = 0,
+                    lastTime = null;
+
+                function animate(time) {
+                    if (lastTime != null)
+                        angle += (time - lastTime) * 0.001;
+                    lastTime = time;
+                    cat.style.top = (Math.sin(angle) * 30) + "px";
+                    cat.style.left = (Math.cos(angle) * 300) + "px";
+                    hat.style.top = (Math.sin(angle) * 30) + "px";
+                    hat.style.left = (Math.cos(angle) * 300) + "px";
+                    requestAnimationFrame(animate);
+                }
+                requestAnimationFrame(animate);
+            </script>
+
+            <footer>
+                <nav>
+                    <a href="https://github.com/hblee12/des157">github</a>
+                    <a href="../index.html">portal</a>
+                    <a href="mailto:hbllee@ucdavis.edu" target="_blank">email</a>
+                    <a href="https://validator.w3.org/check?uri=referer">validate HTML 5</a>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">validate CSS</a>
+                </nav>
+            </footer>
+</body>
