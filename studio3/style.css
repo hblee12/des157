@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/* start all css with a reset */
+
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+body {
+    background-color: #90ddd7;
+}
+
+#laptop {
+    position: fixed;
+    margin-left: 270px;
+    width: 55%;
+}
+
+#headphones {
+    position: absolute;
+    left: 1070px;
+    top: 350px;
+}
+
+#boba {
+    position: absolute;
+    top: -10px;
+    left: 1030px;
+}
+
+#watch {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+}
+
+#pen {
+    position: absolute;
+    top: 380px;
+    left: 50px;
+}
+
+#answer {
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    display: none;
+}
+
+#answer_boba {
+    position: absolute;
+    left: 380px;
+    top: 150px;
+    width: 30%;
+    height: 25%;
+    background-color: white;
+    color: black;
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+}
+
+#answer_laptop {
+    position: absolute;
+    left: 380px;
+    top: 150px;
+    width: 30%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px
+}
+
+#answer_watch {
+    position: absolute;
+    left: 380px;
+    top: 150px;
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    color: black;
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px
+}
+
+#answer_pen {
+    position: absolute;
+    left: 380px;
+    top: 150px;
+    width: 30%;
+    height: 20%;
+    background-color: white;
+    color: black;
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px
+}
+
+#close {
+    position: fixed;
+    top: 30%;
+    right: 650px;
+    color: white;
+    display: none;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    top: 660px;
+    left: 520px;
+}
+
+p {
+    font-family: futura;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    position: relative;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a:link {
+    font-family: futura;
+    font-size: 13px;
+    color: #20b2b2;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 25px;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: white;
+}
