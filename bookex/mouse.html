@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>chapter 3: minimum</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+        
+        @font-face {
+            font-family: 'montserratregular';
+            src: url('montserrat-regular-webfont.woff2') format('woff2'), url('montserrat-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: montserratregular, sans-serif;
+            color: #333;
+            background-color: #FCC7A9;
+            font-size: 12px;
+            margin: 100px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 65px;
+            color: #20b2b2;
+            text-align: center;
+        }
+        
+        img {
+            margin-top: 200px;
+            margin-left: 600px;
+        }
+        
+        footer {
+            text-transform: uppercase;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        .trail {
+            /* className for the trail elements */
+            position: absolute;
+            height: 5px;
+            width: 5px;
+            border-radius: 3px;
+            /*change the color of the dot*/
+            background: white;
+        }
+        
+        body {
+            height: 300px;
+        }
+        
+        a:link {
+            font-size: 13px;
+            color: #333333;
+            text-decoration: none;
+            padding-right: 25px;
+        }
+        
+        a:visited {
+            color: gray;
+        }
+        
+        a:hover {
+            color: #20b2b2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>chapter 14: mouse trail</h1>
+    <script>
+        //declare the variable
+        var dots = [];
+        //the number of dots
+        for (var i = 0; i < 50; i++) {
+            var node = document.createElement("div");
+            node.className = "trail";
+            document.body.appendChild(node);
+            dots.push(node);
+        }
+        var currentDot = 0;
+        //location of the dots on the page
+        addEventListener("mousemove", function (event) {
+            var dot = dots[currentDot];
+            dot.style.left = (event.pageX - 3) + "px";
+            dot.style.top = (event.pageY - 3) + "px";
+            currentDot = (currentDot + 1) % dots.length;
+        });
+    </script>
+
+
+    <footer>
+        <nav>
+            <a href="https://github.com/hblee12/des157">github</a>
+            <a href="../index.html">portal</a>
+            <a href="mailto:hbllee@ucdavis.edu" target="_blank">email</a>
+            <a href="https://validator.w3.org/check?uri=referer">validate HTML 5</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">validate CSS</a>
+        </nav>
+    </footer>
+</body>
