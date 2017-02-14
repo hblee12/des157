@@ -174,7 +174,7 @@ h1 {
 
 #four {
     position: absolute;
-    top: 570px;
+    top: 568px;
     left: 680px;
     width: 35px;
     height: 35px;
@@ -223,6 +223,8 @@ p {
 
 #tip2 {
     position: absolute;
+    left: 800px;
+    top: 330px;
     padding: 10px;
     width: 200px;
     border-radius: 2px;
@@ -235,6 +237,8 @@ p {
 
 #tip3 {
     position: absolute;
+    left: 800px;
+    top: 435px;
     padding: 10px;
     width: 200px;
     border-radius: 2px;
@@ -247,6 +251,8 @@ p {
 
 #tip4 {
     position: absolute;
+    left: 800px;
+    top: 540px;
     padding: 10px;
     width: 200px;
     border-radius: 2px;
