@@ -16,33 +16,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
     })
 
 
-    var one = document.getElementById('one');
-    var tip = document.getElementById('tip');
-
-    var tipTimer;
-
-    one.addEventListener('mouseover', function () {
-        console.log('mouseover');
-        tipTimer = setTimeout(showtip, 100);
+    one.addEventListener('mousedown', function () {
+        one.style.backgroundColor = 'green';
     });
-
-    one.addEventListener('mouseout', function () {
-        console.log('mouseout');
-        clearTimeout(tipTimer);
-        tip.style.opacity = 0;
+    
+    one.addEventListener('mouseup', function (){
+        one.style.backgroundColor = 'white';
     });
-
-    function showtip() {
-        console.log('message');
-        tip.style.opacity = 1;
-    }
 
     var two = document.getElementById('two');
     var tip2 = document.getElementById('tip2');
 
     two.addEventListener('mouseover', function () {
         console.log('mouseover');
-        tipTimer = setTimeout(showtip2, 100);
+        tipTimer = setTimeout(showtip2, 500);
     });
 
     two.addEventListener('mouseout', function () {
@@ -61,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     three.addEventListener('mouseover', function () {
         console.log('mouseover');
-        tipTimer = setTimeout(showtip3, 100);
+        tipTimer = setTimeout(showtip3, 500);
     });
 
     three.addEventListener('mouseout', function () {
@@ -74,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         console.log('message');
         tip3.style.opacity = 1;
     }
-    
+
     var four = document.getElementById('four');
     var tip4 = document.getElementById('tip4');
 
     four.addEventListener('mouseover', function () {
         console.log('mouseover');
-        tipTimer = setTimeout(showtip4, 100);
+        tipTimer = setTimeout(showtip4, 500);
     });
 
     four.addEventListener('mouseout', function () {

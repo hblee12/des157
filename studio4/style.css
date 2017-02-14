@@ -142,7 +142,7 @@ h1 {
 #one {
     position: absolute;
     top: 230px;
-    left: 678px;
+    left: 680px;
     width: 35px;
     height: 35px;
     background-color: white;
@@ -152,8 +152,8 @@ h1 {
 
 #two {
     position: absolute;
-    top: 340px;
-    left: 678px;
+    top: 342px;
+    left: 680px;
     width: 35px;
     height: 35px;
     background-color: white;
@@ -163,8 +163,8 @@ h1 {
 
 #three {
     position: absolute;
-    top: 450px;
-    left: 678px;
+    top: 455px;
+    left: 680px;
     width: 35px;
     height: 35px;
     background-color: white;
@@ -185,14 +185,14 @@ h1 {
 
 aside {
     position: absolute;
-    top: 10px;
+    top: 40px;
     right: 10px;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #f4aa10;
     color: white;
     display: none;
-    opacity: .85;
+    opacity: .9;
 }
 
 aside p {
@@ -219,18 +219,6 @@ p {
     font-size: 20px;
     text-transform: lowercase;
     color: white;
-}
-
-#tip {
-    position: absolute;
-    padding: 10px;
-    width: 100px;
-    border-radius: 2px;
-    font-size: 15px;
-    color: #000;
-    background-color: #f4aa10;
-    opacity: 0;
-    transition: all 1s;
 }
 
 #tip2 {
@@ -270,10 +258,10 @@ p {
 }
 
 footer {
+    padding-top: 30px;
     text-transform: uppercase;
     height: 50px;
     width: 100%;
-    text-align: center;
 }
 
 a:link {
