@@ -129,7 +129,7 @@ body {
     color: gray;
     background-color: white;
     margin: auto;
-    width: 700px;
+    width: 800px;
 }
 
 h1 {
@@ -141,14 +141,77 @@ h1 {
     letter-spacing: 1px;
 }
 
+.wireframe{
+    position: relative;
+}
+
 #ipad {
     position: absolute;
 }
 
+#ipad2 {
+    position: absolute;
+    top: 550px;
+}
+
 #brush {
     position: absolute;
-    left: 419px;
-    top: 347px;
+    left: 58px;
+    top: 205px;
+}
+
+#menu {
+    position: absolute;
+    left: 470px;
+    top: 165px;
+}
+
+#add {
+    position: absolute;
+    left: 150px;
+    top: 400px;
+}
+
+#pad {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+#brush2 {
+    position: absolute;
+    left: 58px;
+    top: 755px;
+}
+
+#menu2 {
+    position: absolute;
+    left: 475px;
+    top: 720px;
+}
+
+#expand {
+    position: absolute;
+    left: 480px;
+    top: 755px;
+}
+
+#add2 {
+    position: absolute;
+    left: 150px;
+    top: 950px;
+}
+
+#pad2 {
+    position: absolute;
+    left: 200px;
+    top: 750px;
+}
+
+#share {
+    position: absolute;
+    left: 485px;
+    top: 830px;
 }
 
 footer {
