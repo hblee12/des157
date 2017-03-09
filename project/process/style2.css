@@ -159,6 +159,11 @@ h1 {
     top: 1100px;
 }
 
+#ipad4 {
+    position: absolute;
+    top: 1650px;
+}
+
 #brush {
     position: absolute;
     left: 104px;
@@ -213,12 +218,6 @@ h1 {
     top: 765px;
 }
 
-#share {
-    position: absolute;
-    left: 485px;
-    top: 830px;
-}
-
 #brush3 {
     position: absolute;
     left: 104px;
@@ -249,16 +248,34 @@ h1 {
     top: 1381px;
 }
 
-#addCancel {
+#brush4 {
     position: absolute;
-    left: 180px;
-    top: 1450px;
+    left: 104px;
+    top: 1870px;
 }
 
-#addNew {
+#menu4 {
     position: absolute;
-    left: 180px;
-    top: 1400px;
+    left: 475px;
+    top: 1862px;
+}
+
+#add4 {
+    position: absolute;
+    left: 150px;
+    top: 2050px;
+}
+
+#pad4 {
+    position: absolute;
+    left: 200px;
+    top: 1870px;
+}
+
+#delete {
+    position: absolute;
+    left: 220px;
+    top: 1900px;
 }
 
 footer {
