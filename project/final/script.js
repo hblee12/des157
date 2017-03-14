@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     add.addEventListener('mousedown', function () {
         alert('Practice a new character?');
     });
-    
+
     var share = document.getElementById('share');
 
     share.addEventListener('mousedown', function () {
@@ -175,5 +175,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
         brush2.src = 'brush2.png';
         brush.src = 'brush_short.png';
     });
-    
+
 });
