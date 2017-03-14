@@ -152,7 +152,7 @@ h1 {
     position: relative;
 }
 
-#simple_sketch{
+#myCanvas{
     position: absolute;
     left: 250px;
     top: 200px;
