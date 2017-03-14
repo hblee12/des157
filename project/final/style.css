@@ -168,6 +168,12 @@ h1 {
     margin-left: 212px;
 }
 
+#paper_blank{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 212px;
+}
+
 #menu{
     position: absolute;
     margin-top: 55px;
@@ -196,6 +202,12 @@ h1 {
     position: absolute;
     margin-top: 530px;
     margin-left: 90px;
+}
+
+#corner{
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 800px;
 }
 
 
