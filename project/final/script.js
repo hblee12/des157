@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             path.insert(0, strokePoint);
         }
     }*/
+    
+    /*
     var tool;
     var path;
     var minSize = 5;
@@ -121,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // will force a new path next time the user drags fast enough:
             path = null;
         }
-    }
+    }*/
 
     var simp = document.getElementById('simp');
     var paper = document.getElementById('paper');
