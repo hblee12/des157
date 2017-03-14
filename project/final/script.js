@@ -156,6 +156,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     add.addEventListener('mousedown', function () {
         alert('Practice a new character?');
     });
+    
+    var share = document.getElementById('share');
+
+    share.addEventListener('mousedown', function () {
+        alert('Save image?');
+    });
 
     var brush = document.getElementById('brush');
     var brush2 = document.getElementById('brush2');
