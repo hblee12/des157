@@ -1,9 +1,9 @@
 //interactiveprototype3
 document.addEventListener("DOMContentLoaded", function (event) {
 
-    /*tool.fixedDistance = 30;*/
+    /*tool.fixedDistance = 30;
 
-    /*var path;
+    var path;
     var strokeEnds = 1;
 
     function onMouseDown(event) {
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             strokePoint += offset;
             path.insert(0, strokePoint);
         }
-    }*/
-    
+    }
+
     /*
     var tool;
     var path;
@@ -124,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             path = null;
         }
     }*/
+
 
     var simp = document.getElementById('simp');
     var paper = document.getElementById('paper');

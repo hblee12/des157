@@ -5,9 +5,7 @@
     <meta charset="UTF-8" />
     <title>Interactive Prototype 3</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-    <script src="paper-full.js"></script>
-    <script canvas="canvas.js"></script>
+    <script src="sketch.js"></script>
 </head>
 
 <body>
@@ -15,29 +13,35 @@
     <header>
         <img src="header.png" alt="header" width="1024px">
     </header>
-    
-    <h1>Calligraphy</h1>
 
+    <h1>Calligraphy</h1>
+    <canvas id="simple_sketch" width="576" height="483"></canvas>
+    <script type="text/javascript">
+        (function () {
+            ('#simple_sketch').sketch();
+        });
+    </script>
     <section class="wireframe">
-        
+
         <img id="brush" src="brush.png" alt="brushes" width="20%">
-        
+
         <img id="brush2" src="brush2.png" alt="brushes" width="20%">
-        
         <img id="paper" src="paper_trad.png" alt="paper" width="65%">
-        
+
         <img id="paper_blank" src="paper.png" alt="paper" width="65%">
-        
+
         <img id="menu" src="menu.png" alt="menu" width="14%">
-        
+
         <img id="simp" src="ma_simp.png" alt="simplified" width="6%">
 
         <img id="trad" src="ma_trad.png" alt="traditional" width="6%">
-        
+
         <img id="share" src="share.png" alt="share" width="6%">
-        
+
         <img id="add" src="add2.png" alt="add" width="6%">
-        
+
         <img id="corner" src="corner.png" alt="corner" width="6%">
-        
     </section>
+    
+    <script src="script.js"></script>
+</body>
