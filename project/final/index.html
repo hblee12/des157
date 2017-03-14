@@ -7,13 +7,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="paper.js"></script>
     <script type="text/javascript" canvas="canvas">
-    
         var lastPoint;
+        var addStrokes;
+        var path;
         var tool;
 
         function onMouseDrag(event) {
-            // If this is the first drag event,
-            // add the strokes at the start:
             if (event.count == 0) {
                 addStrokes(event.middlePoint, event.delta * -1);
             } else {
@@ -71,6 +70,7 @@
         <img id="brush" src="brush.png" alt="brushes" width="20%">
 
         <img id="brush2" src="brush2.png" alt="brushes" width="20%">
+        
         <img id="paper" src="paper_trad.png" alt="paper" width="65%">
 
         <img id="paper_blank" src="paper.png" alt="paper" width="65%">
