@@ -1,6 +1,15 @@
 //interactiveprototype3
 document.addEventListener("DOMContentLoaded", function (event) {
 
+    var corner = document.getElementById('corner');
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    corner.addEventListener('mousedown', function(){
+
+context.clearRect(0, 0, canvas.width, canvas.height);
+    });
+    
     var simp = document.getElementById('simp');
     var paper = document.getElementById('paper');
 
@@ -17,16 +26,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         paper.src = 'paper_trad.png';
         trad.src = 'ma_trad_r.png';
         simp.src = 'ma_simp.png';
-    });
-
-    var corner = document.getElementById('corner');
-    var canvas = document.getElementById('myCanvas');
-    var context = canvas.getContext('2d');
-
-    corner.addEventListener('mousedown', function(){
-
-context.clearRect(0, 0, canvas.width, canvas.height);
-        window.location.reload()
     });
 
     var add = document.getElementById('add');
