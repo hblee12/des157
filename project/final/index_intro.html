@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Interactive Prototype 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        window.onload = timeout;
+
+        function timeout() {
+            window.setTimeout("redirect()", 10000)
+        }
+
+        function redirect() {
+            window.location = "index.html"
+            return
+        }
+    </script>
+
+</head>
+
+<body onload="timeout()">
+    <section class="wireframe">
+        <header>
+            <img src="header.png" alt="header" width="1020px">
+        </header>
+
+        <h1>Calligraphy</h1>
+
+    </section>
+</body>
