@@ -158,6 +158,12 @@ h1 {
     top: 200px;
 }
 
+#corner{
+    position: fixed;
+    margin-top: 520px;
+    margin-left: 750px;
+}
+
 #brush{
     position: fixed;
     margin-top: 100px;
@@ -201,16 +207,9 @@ h1 {
 
 #add{
     position: fixed;
-    margin-top: 530px;
-    margin-left: 90px;
+    margin-top: 500px;
+    margin-left: 50px;
 }
-
-#corner{
-    position: fixed;
-    margin-top: 560px;
-    margin-left: 800px;
-}
-
 
 a:link {
     font-size: 10px;
