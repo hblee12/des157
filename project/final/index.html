@@ -5,76 +5,55 @@
     <meta charset="UTF-8" />
     <title>Interactive Prototype 3</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="paper.js"></script>
-    <script type="text/javascript" canvas="canvas">
-        var lastPoint;
-        var addStrokes;
-        var path;
-        var tool;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.3/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+tool.minDistance = 10;
+tool.maxDistance = 60;
 
-        function onMouseDrag(event) {
-            if (event.count == 0) {
-                addStrokes(event.middlePoint, event.delta * -1);
-            } else {
-                var step = event.delta / 2;
-                step.angle += 90;
+var path;
 
-                var top = event.middlePoint + step;
-                var bottom = event.middlePoint - step;
+function onMouseDown(event) {
+	path = new Path();
+	path.fillColor = '#00000';
 
-                path.add(top);
-                path.insert(0, bottom);
-            }
-            path.smooth();
+	path.add(event.point);
+}
 
-            lastPoint = event.middlePoint;
-        }
+function onMouseDrag(event) {
+	var step = event.delta / 2;
+	step.angle += 90;
+	
+	var top = event.middlePoint + step;
+	var bottom = event.middlePoint - step;
+	
+	path.add(top);
+	path.insert(0, bottom);
+	path.smooth();
+}
 
-        function onMouseUp(event) {
-            var delta = event.point - lastPoint;
-            delta.length = tool.maxDistance;
-            addStrokes(event.point, delta);
-            path.closed = true;
-            path.smooth();
-        }
-
-        function addStrokes(point, delta) {
-            var step = delta.rotate(90);
-            var strokePoints = strokeEnds + 1;
-            point -= step / 2;
-            step /= strokePoints - 1;
-            for (var i = 0; i < strokePoints; i++) {
-                var strokePoint = point + step * i;
-                var offset = delta * (Math.random() * 0.2 + 0.1);
-                if (i % 1) {
-                    offset *= -1;
-                }
-                strokePoint += offset;
-                path.insert(0, strokePoint);
-            }
-        }
+function onMouseUp(event) {
+	path.add(event.point);
+	path.closed = true;
+	path.smooth();
+}
     </script>
     <script src="script.js"></script>
 </head>
 
 <body>
-
+    <section class="wireframe">
     <header>
         <img src="header.png" alt="header" width="1024px">
     </header>
 
     <h1>Calligraphy</h1>
-    <canvas id="myCanvas" width="580px" height="480px"></canvas>
-    <section class="wireframe">
-
-        <img id="brush" src="brush.png" alt="brushes" width="20%">
-
-        <img id="brush2" src="brush2.png" alt="brushes" width="20%">
         
-        <img id="paper" src="paper_trad.png" alt="paper" width="65%">
+         <img id="paper" src="paper_trad.png" alt="paper" width="65%">
 
         <img id="paper_blank" src="paper.png" alt="paper" width="65%">
 
+        <img id="brush" src="brush.png" alt="brushes" width="20%">
+        
         <img id="menu" src="menu.png" alt="menu" width="14%">
 
         <img id="simp" src="ma_simp.png" alt="simplified" width="6%">
@@ -86,5 +65,7 @@
         <img id="add" src="add2.png" alt="add" width="6%">
 
         <img id="corner" src="corner.png" alt="corner" width="6%">
+        
+        <canvas id="myCanvas" width="580px" height="480px"></canvas>
     </section>
 </body>

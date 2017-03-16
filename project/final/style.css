@@ -132,9 +132,9 @@ table {
 }
 
 body {
+    background-image: url(bamboo.jpg);
     font-family: helvetica;
     color: gray;
-    background-image: url(bamboo.jpg);
     margin: auto;
 }
 
@@ -159,59 +159,54 @@ h1 {
 }
 
 #brush{
-    position: absolute;
+    position: fixed;
     margin-top: 100px;
 }
 
-#brush2{
-    position: absolute;
-    margin-top: 150px;
-}
-
 #paper{
-    position: absolute;
+    position: fixed;
     margin-top: 70px;
     margin-left: 212px;
 }
 
 #paper_blank{
-    position: absolute;
+    position: fixed;
     margin-top: 70px;
     margin-left: 212px;
 }
 
 #menu{
-    position: absolute;
+    position: fixed;
     margin-top: 55px;
     margin-left: 875px;
 }
 
 #simp{
-    position: absolute;
+    position: fixed;
     margin-top: 110px;
     margin-left: 917px;
 }
 
 #trad{
-    position: absolute;
+    position: fixed;
     margin-top: 190px;
     margin-left: 917px;
 }
 
 #share{
-    position: absolute;
+    position: fixed;
     margin-top: 270px;
     margin-left: 917px;
 }
 
 #add{
-    position: absolute;
+    position: fixed;
     margin-top: 530px;
     margin-left: 90px;
 }
 
 #corner{
-    position: absolute;
+    position: fixed;
     margin-top: 560px;
     margin-left: 800px;
 }
