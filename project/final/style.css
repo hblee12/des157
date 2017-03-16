@@ -160,8 +160,8 @@ h1 {
 
 #corner{
     position: fixed;
-    margin-top: 520px;
-    margin-left: 750px;
+    margin-top: 515px;
+    margin-left: 745px;
 }
 
 #brush{
@@ -184,25 +184,25 @@ h1 {
 #menu{
     position: fixed;
     margin-top: 55px;
-    margin-left: 875px;
+    margin-left: 860px;
 }
 
 #simp{
     position: fixed;
     margin-top: 110px;
-    margin-left: 917px;
+    margin-left: 900px;
 }
 
 #trad{
     position: fixed;
     margin-top: 190px;
-    margin-left: 917px;
+    margin-left: 900px;
 }
 
 #share{
     position: fixed;
     margin-top: 270px;
-    margin-left: 917px;
+    margin-left: 900px;
 }
 
 #add{
