@@ -133,6 +133,7 @@ table {
 
 body {
     background-image: url(bamboo.jpg);
+    background-position: fixed;
     font-family: helvetica;
     color: gray;
 }
