@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <title>Interactive Prototype 3</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_intro.css">
     <script type="text/javascript">
         window.onload = timeout;
 
         function timeout() {
-            window.setTimeout("redirect()", 10000)
+            window.setTimeout("redirect()", 60000)
         }
 
         function redirect() {
@@ -21,12 +21,22 @@
 </head>
 
 <body onload="timeout()">
-    <section class="wireframe">
-        <header>
-            <img src="header.png" alt="header" width="1020px">
-        </header>
 
-        <h1>Calligraphy</h1>
+    <header>
+        <img src="header.png" alt="header" width="1020px">
+    </header>
 
+    <h1>Welcome to Calligrify!</h1>
+
+    <section class="info">
+        
+        <img src="instructions-01.png" alt="instructions" width="80%">
+
+        <form>
+            <input id="button" type="button" value="continue" onClick="redirect()">
+        </form>
     </section>
+
 </body>
+
+</html>
